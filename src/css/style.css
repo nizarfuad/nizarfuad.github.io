@@ -1,0 +1,153 @@
+body {
+  font-family: sans-serif;
+}
+
+label .label-0 {
+  font-size: large;
+}
+
+div .box-0 {
+  outline: 0;
+}
+
+#btn {
+  position: relative;
+  background-color: #625cd1;
+  border: none;
+  font-size: 15px;
+  color: #ffffff;
+  width: 200px;
+  padding: 5px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#btn:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.textinbox {
+  padding: 4.5px 9px;
+  font-size: 15px;
+  border: 1px solid #ced4da;
+}
+
+.bounce {
+  height: 40px;
+  font-family: sans-serif;
+  font-size: large;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+  color: #625cd1;
+  border: 0px solid #000000;
+}
+
+.bounce p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 40px;
+  text-align: center;
+  -moz-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  -moz-animation: bouncing-text 5s linear infinite alternate;
+  -webkit-animation: bouncing-text 5s linear infinite alternate;
+  animation: bouncing-text 30s linear infinite alternate;
+}
+
+@-moz-keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes bouncing-text {
+  0% {
+    -webkit-transform: translateX(50%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+  }
+}
+
+@keyframes bouncing-text {
+  0% {
+    -moz-transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  100% {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.my-float {
+  margin-top: 10px;
+}
+
+.bug {
+  position: fixed;
+  padding: 15px;
+  width: 180px;
+  bottom: 43px;
+  right: 80px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  z-index: 90;
+  background-color: #625cd1;
+  border-radius: 50px;
+}
+
+.bug {
+  display: none;
+}
+
+.float:hover + .bug {
+  display: block;
+  animation: bouncing-text 1s;
+}
