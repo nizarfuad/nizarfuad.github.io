@@ -1,7 +1,3 @@
-body {
-  font-family: sans-serif;
-}
-
 label .label-0 {
   font-size: large;
 }
@@ -70,12 +66,14 @@ div .box-0 {
   margin: 0;
   line-height: 40px;
   text-align: center;
-  -moz-transform: translateX(50%);
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-  -moz-animation: bouncing-text 5s linear infinite alternate;
-  -webkit-animation: bouncing-text 5s linear infinite alternate;
-  animation: bouncing-text 30s linear infinite alternate;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: animation-msg;
 }
 
 @-moz-keyframes bouncing-text {
@@ -150,4 +148,13 @@ div .box-0 {
 .float:hover + .bug {
   display: block;
   animation: bouncing-text 1s;
+}
+
+.sosmed {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sosmed:hover {
+  color: #0d00ff;
 }
