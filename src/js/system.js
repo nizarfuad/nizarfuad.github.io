@@ -82,3 +82,15 @@ function validas() {
   }
   form.reset();
 }
+
+function modeTrigger() {
+  var element = document.body;
+  var darkSos = document.getElementById("sosTr");
+  var darkSos2 = document.getElementById("sosTr-2");
+  var darkSos3 = document.getElementById("sosTr-3");
+  var darkButton = document.getElementById("buttonTr");
+  element.classList.toggle("dark-mode");
+  darkSos.classList.toggle("text-dark");
+  darkSos2.classList.toggle("text-dark");
+  darkSos3.classList.toggle("text-dark");
+}

@@ -1,3 +1,21 @@
+/* .darkmode {
+  color: #fff;
+}
+
+body {
+  background: #212529;
+} */
+
+body {
+  background-color: white;
+  color: #212529;
+}
+
+.dark-mode {
+  background-color: #212529;
+  color: white;
+}
+
 label .label-0 {
   font-size: large;
 }
@@ -151,7 +169,6 @@ div .box-0 {
 }
 
 .sosmed {
-  color: #000000;
   text-decoration: none;
 }
 
