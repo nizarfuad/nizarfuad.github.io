@@ -1,177 +1,95 @@
-/* .darkmode {
+@font-face {
+  font-family: mainFont;
+  src: url(../font/main.ttf);
+}
+
+@font-face {
+  font-family: mainBold;
+  src: url(../font/mainSBold.ttf);
+}
+
+body {
+  background-color: #32323e;
   color: #fff;
+  font-family: mainFont;
 }
 
-body {
-  background: #212529;
-} */
-
-body {
-  background-color: white;
-  color: #212529;
+#solve {
+  padding: 4px;
+  font-size: 14px;
 }
 
-.dark-mode {
-  background-color: #212529;
-  color: white;
+solve:focus {
+  outline-width: 1px;
+  outline-style: dashed;
+  outline-color: red;
 }
 
-label .label-0 {
-  font-size: large;
+.box-input {
+  padding: 6px;
+  margin: 2px;
+  font-size: small;
+  background-color: transparent !important;
+  color: #fff !important;
 }
 
-div .box-0 {
-  outline: 0;
-}
-
-#btn {
-  position: relative;
-  background-color: #625cd1;
-  border: none;
-  font-size: 15px;
+.label-box {
+  font-size: 13px;
   color: #ffffff;
-  width: 200px;
-  padding: 5px;
-  text-align: center;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 3px;
 }
 
-#btn:after {
-  content: "";
-  background: #f1f1f1;
-  display: block;
-  position: absolute;
-  padding-top: 300%;
-  padding-left: 350%;
-  margin-left: -20px !important;
-  margin-top: -120%;
-  opacity: 0;
-  transition: all 0.8s;
+.form-main {
+  padding: 25px;
+  border-radius: 13px;
+  background-color: #272730;
 }
 
-#btn:active:after {
-  padding: 0;
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
-  opacity: 1;
-  transition: 0s;
 }
 
-.textinbox {
-  padding: 4.5px 9px;
-  font-size: 15px;
-  border: 1px solid #ced4da;
-}
-
-.bounce {
-  height: 40px;
-  font-family: sans-serif;
-  font-size: large;
-  overflow: hidden;
-  position: relative;
-  background: #ffffff;
-  color: #625cd1;
-  border: 0px solid #000000;
-}
-
-.bounce p {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  line-height: 40px;
+.output-res {
   text-align: center;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  animation-name: animation-msg;
+  margin-top: 20px;
+  font-size: 13px;
 }
 
-@-moz-keyframes bouncing-text {
-  0% {
-    -moz-transform: translateX(50%);
-  }
-  100% {
-    -moz-transform: translateX(-50%);
-  }
+.picture-logo-0 {
+  width: 150px;
+  margin: 12px;
 }
 
-@-webkit-keyframes bouncing-text {
-  0% {
-    -webkit-transform: translateX(50%);
-  }
-  100% {
-    -webkit-transform: translateX(-50%);
-  }
-}
-
-@keyframes bouncing-text {
-  0% {
-    -moz-transform: translateX(50%);
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-  }
-  100% {
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-}
-
-.float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 40px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
+.desc-0 {
   text-decoration: none;
-}
-
-.my-float {
-  margin-top: 10px;
-}
-
-.bug {
-  position: fixed;
-  padding: 15px;
-  width: 180px;
-  bottom: 43px;
-  right: 80px;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  z-index: 90;
-  background-color: #625cd1;
-  border-radius: 50px;
-}
-
-.bug {
-  display: none;
-}
-
-.float:hover + .bug {
-  display: block;
-  animation: bouncing-text 1s;
+  font-size: 13px;
+  font-family: mainBold;
 }
 
 .sosmed {
-  text-decoration: none;
+  font-size: 18px;
+  margin-top: 175px;
 }
 
-.sosmed:hover {
-  color: #0d00ff;
+.a-hover {
+  color: #fff;
+  margin-left: 20px;
+}
+
+.a-hover:hover {
+  color: #dc3545;
+}
+
+.topAnnouncer {
+  font-size: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.u-00 {
+  text-decoration: none;
 }
