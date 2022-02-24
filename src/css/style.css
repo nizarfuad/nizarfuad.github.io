@@ -19,7 +19,7 @@ body {
   font-size: 14px;
 }
 
-solve:focus {
+#solve:focus {
   outline-width: 1px;
   outline-style: dashed;
   outline-color: red;
@@ -28,7 +28,7 @@ solve:focus {
 .box-input {
   padding: 6px;
   margin: 2px;
-  font-size: small;
+  font-size: 14px;
   background-color: transparent !important;
   color: #fff !important;
 }
@@ -40,7 +40,7 @@ solve:focus {
 
 .form-main {
   padding: 25px;
-  border-radius: 13px;
+  border-radius: 7px;
   background-color: #272730;
 }
 
@@ -86,6 +86,7 @@ input::-webkit-inner-spin-button {
 }
 
 .topAnnouncer {
+  padding: 7px;
   font-size: 12px;
   border-bottom: 1px solid grey;
 }
